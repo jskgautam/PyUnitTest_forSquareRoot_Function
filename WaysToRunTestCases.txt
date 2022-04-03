@@ -1,0 +1,21 @@
+Four ways to run the test.
+
+1. Direct run the python file in spyder or Pycharm:- It will show how many failed and how many failed. 
+-> Also indicates result in dot format. Ex .... or (if 3rd case fails out of 4 test cases) ..F.
+-> no detailed report about particular test cases.
+
+
+2. Run as a script. Use CMD terminal or Conda terminal. Change the directory in both cases. 
+
+# python -m unittest pythonfilename.py
+-> python -m unittest test_sqr_root.py
+
+3. Gives more information on each unit test cases. Run as a script. Use CMD terminal or Conda terminal. Change the directory in both cases.
+
+# python -m unittest -v pythonfilename.py
+-> python -m unittest -v test_sqr_root.py
+
+
+4. It discover all the modules that starts with "test_" in the directory. Run as a script. Use CMD terminal or Conda terminal. Change the directory in both cases.
+
+python -m unittest discover
